@@ -1314,7 +1314,7 @@
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  padding: 0.5rem 0.9375rem 1.25rem;
+  padding: 0.5rem clamp(0.5rem, 0.289rem + 0.86vw, 0.938rem) clamp(0.5rem, 0.139rem + 1.48vw, 1.25rem);
 }
 .section-components .item-component__content:has(.item-component__button.button--lite:hover) .item-component__title {
   color: var(--accent-color);
