@@ -1404,6 +1404,10 @@
   max-width: 29.25rem;
   overflow: hidden;
 }
+.section-video .item-video {
+  border: none;
+  text-align: left;
+}
 .section-video .item-video .video__wrapper {
   border-radius: 0.625rem;
   aspect-ratio: 468/263;
@@ -1416,14 +1420,19 @@
   overflow: hidden;
 }
 .section-video .item-video__image .btn__play {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .section-video .item-video__title {
+  transition: color 0.2s ease;
   font-weight: 400;
   font-size: 1.3125rem;
   line-height: 100%;
+}
+.section-video .item-video:hover .item-video__title {
+  color: var(--accent-color);
 }
 
 .section-history__grid {
